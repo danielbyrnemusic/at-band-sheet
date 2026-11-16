@@ -3,350 +3,320 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Band Call Sheet — November 8, 2026</title>
-<!-- Open Graph / iMessage preview -->
+<title>Angelus Temple Band - Sunday, Nov 22</title>
+<meta name="robots" content="noindex,nofollow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Angelus Temple">
-<meta property="og:title" content="Band Call Sheet — November 8, 2026">
-<meta property="og:description" content="Setlist, charts & info for Sunday service · Angelus Temple">
-<meta property="og:image" content="https://storage1.snappages.site/B68JRB/assets/images/10500892_1080x694_2500.png">
-<meta property="og:image:width" content="1080">
-<meta property="og:image:height" content="694">
+<meta property="og:title" content="Angelus Temple Band - Sunday, Nov 22">
+<meta property="og:description" content="Call 7:30 AM · Thank God I'm Free (D), Another Like You (G), Goodness Of God (G), Blood Of Jesus (E)">
+<meta property="og:image" content="https://danielbyrnemusic.github.io/at-band-sheet/og.png">
+<meta property="og:image:secure_url" content="https://danielbyrnemusic.github.io/at-band-sheet/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
+<meta property="og:url" content="https://danielbyrnemusic.github.io/at-band-sheet">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@angelustemple">
-<meta name="twitter:title" content="Band Call Sheet — November 8, 2026">
-<meta name="twitter:description" content="Setlist, charts & info for Sunday service · Angelus Temple">
-<meta name="twitter:image" content="https://storage1.snappages.site/B68JRB/assets/images/10500892_1080x694_2500.png">
+<meta name="twitter:title" content="Angelus Temple Band - Sunday, Nov 22">
+<meta name="twitter:description" content="Call 7:30 AM · Thank God I'm Free (D), Another Like You (G), Goodness Of God (G), Blood Of Jesus (E)">
+<meta name="twitter:image" content="https://danielbyrnemusic.github.io/at-band-sheet/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
+
+:root {
+  --bg: #070708;
+  --page: #0c0c0e;
+  --card: #161618;
+  --card-2: #1c1c1f;
+  --line: rgba(255,255,255,0.08);
+  --line-strong: rgba(255,255,255,0.14);
+  --text: #f5f2ea;
+  --text-dim: #c6c1b6;
+  --text-mute: #9a958a;
+  --gold: #e8c57a;
+  --gold-dim: rgba(232,197,122,0.16);
+  --gold-line: rgba(232,197,122,0.35);
+  --blue: #7ab3ff;
+  --blue-bg: rgba(80,150,255,0.16);
+  --blue-line: rgba(80,150,255,0.32);
+  --violet: #c9b0ff;
+  --violet-bg: rgba(160,120,255,0.16);
+  --violet-line: rgba(160,120,255,0.32);
+  --safe: env(safe-area-inset-bottom, 0px);
+}
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif; background: #0a0a0a; min-height: 100vh; display: flex; justify-content: center; padding: 0 0 4rem; color: #fff; }
-.page { max-width: 430px; width: 100%; background: #0a0a0a; overflow: hidden; }
-@media (min-width: 480px) { body { padding: 1.5rem 0 4rem; background: #050505; } .page { border-radius: 20px; box-shadow: 0 0 0 1px rgba(255,255,255,0.06), 0 24px 60px rgba(0,0,0,0.7); } }
-
-/* ── Hero ── */
-.hero { position: relative; overflow: hidden; }
-.hero-bg { background: #000 url('https://storage1.snappages.site/B68JRB/assets/images/10500892_1080x694_2500.png') center 30%/cover no-repeat; padding: 3.5rem 1.5rem 2rem; position: relative; }
-.hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.85) 100%); }
+html, body {
+  background: #050505;
+  color: var(--text);
+  font-family: Outfit, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+body { min-height: 100vh; display: flex; justify-content: center; padding: 0 0 calc(2.5rem + var(--safe)); }
+.page { max-width: 430px; width: 100%; background: var(--page); overflow: hidden; }
+@media (min-width: 480px) {
+  body { padding: 1.5rem 0 3rem; }
+  .page { border-radius: 20px; box-shadow: 0 0 0 1px rgba(255,255,255,0.06), 0 24px 60px rgba(0,0,0,0.7); }
+}
+.hero { position: relative; isolation: isolate; }
+.hero-bg {
+  background: #000 url('https://storage1.snappages.site/B68JRB/assets/images/10500892_1080x694_2500.png') center 28%/cover no-repeat;
+  padding: 2.4rem 1.25rem 1.25rem;
+}
+.hero-bg::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.55) 48%, rgba(12,12,14,0.97) 100%);
+  z-index: 0;
+}
 .hero-inner { position: relative; z-index: 1; }
-.at-logo { margin-bottom: 2rem; }
-.at-logo img { height: 16px; filter: brightness(0) invert(1); opacity: 0.55; }
-.hero-eyebrow { font-size: 10px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 0.6rem; }
-.hero h1 { font-size: 38px; font-weight: 800; color: #fff; line-height: 1.05; margin-bottom: 1.5rem; letter-spacing: -1px; }
-.meta-row { display: flex; gap: 0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem; }
-.meta-item { flex: 1; display: flex; flex-direction: column; gap: 4px; padding-right: 1rem; border-right: 1px solid rgba(255,255,255,0.1); margin-right: 1rem; }
-.meta-item:last-child { border-right: none; margin-right: 0; }
-.meta-label { font-size: 9px; font-weight: 600; color: rgba(255,255,255,0.35); text-transform: uppercase; letter-spacing: 0.1em; }
-.meta-value { font-size: 15px; font-weight: 700; color: #fff; letter-spacing: -0.2px; }
-
-/* ── Sections ── */
-.section { padding: 1.5rem 1rem 0; }
-.section-header { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(255,255,255,0.3); margin-bottom: 0.75rem; padding: 0 0.15rem; }
-
-/* ── Band list ── */
-.band-list { display: flex; flex-direction: column; padding: 0.5rem 0; }
-.band-row { display: flex; align-items: center; gap: 12px; padding: 0.8rem 1.2rem; cursor: pointer; -webkit-tap-highlight-color: transparent; transition: background 0.12s; border-bottom: 1px solid rgba(255,255,255,0.05); }
-.band-row:last-child { border-bottom: none; }
-.band-row:active { background: rgba(255,255,255,0.04); }
-.band-row-director { border-bottom: 1px solid rgba(255,255,255,0.1) !important; margin-bottom: 0; }
-.band-row-director .band-row-role { color: rgba(255,255,255,0.9); font-weight: 700; }
-.band-row-director .band-row-name { color: #fff; font-weight: 700; }
-.band-row-role { flex: 1; font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.35); text-transform: uppercase; letter-spacing: 0.04em; }
-.band-row-name { flex: 1; font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.9); text-align: right; padding-right: 0.5rem; }
-.band-row-chevron { width: 8px; height: 14px; color: rgba(255,255,255,0.2); flex-shrink: 0; }
-
-/* ── Setlist ── */
-.setlist { display: flex; flex-direction: column; gap: 1px; background: #111; border-radius: 14px; overflow: hidden; }
-.setlist-inner .song-card:first-child { border-top: 1px solid rgba(255,255,255,0.06); }
-.song-card { background: #161616; padding: 1rem 1.1rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
-.song-card:last-child { border-bottom: none; }
-.song-top-row { display: flex; align-items: center; gap: 10px; margin-bottom: 0.55rem; }
-.song-num { font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.2); flex-shrink: 0; width: 16px; font-variant-numeric: tabular-nums; }
-.song-title { font-size: 17px; font-weight: 700; color: #fff; line-height: 1.25; flex: 1; letter-spacing: -0.3px; }
-.key-badge { display: inline-flex; align-items: center; background: rgba(255,255,255,0.12); color: #fff; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 8px; flex-shrink: 0; letter-spacing: 0.06em; border: 1px solid rgba(255,255,255,0.2); margin-left: auto; }
-.song-bpm { font-size: 10px; color: rgba(255,255,255,0.28); flex-shrink: 0; white-space: nowrap; font-variant-numeric: tabular-nums; }
-.song-actions { display: flex; flex-wrap: wrap; gap: 6px; padding-left: 26px; padding-bottom: 2px; }
-.pco-section-label { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(100,180,255,0.6); padding-left: 26px; margin-top: 0.5rem; margin-bottom: 0.3rem; }
-.song-pco-actions { margin-top: 0; }
-.yt-divider { height: 1px; background: rgba(255,255,255,0.07); margin: 0.65rem 0 0; }
-.yt-section-label { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(255,80,80,0.55); padding-left: 26px; margin-top: 0.55rem; margin-bottom: 0.3rem; }
-.song-yt-actions { margin-top: 0; }
-.res-btn { display: inline-flex; align-items: center; gap: 4px; font-size: 11.5px; font-weight: 600; border-radius: 20px; padding: 5px 12px; cursor: pointer; border: none; white-space: nowrap; flex-shrink: 0; text-decoration: none; }
-.res-btn svg { width: 8px; height: 8px; flex-shrink: 0; }
-.res-btn.chart { color: #fff; background: rgba(60,140,255,0.22); border: 1px solid rgba(60,140,255,0.35); }
-.res-btn.mp3 { color: #c8a8ff; background: rgba(160,100,255,0.22); border: 1px solid rgba(160,100,255,0.35); }
-.res-btn.play { color: rgba(255,255,255,0.45); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); font-size: 11px; }
-.res-btn[style*="opacity"] { background: rgba(255,255,255,0.04) !important; color: rgba(255,255,255,0.2) !important; border: 1px solid rgba(255,255,255,0.06) !important; }
-.song-note { margin-top: 0.5rem; padding-left: 26px; font-size: 12px; color: rgba(255,255,255,0.35); line-height: 1.5; font-style: italic; }
-
-/* ── Big cards ── */
-.big-card { background: #161616; border-radius: 16px; overflow: hidden; }
-.big-card-label { font-size: 28px; font-weight: 800; color: #fff; letter-spacing: -0.5px; padding: 1.1rem 1.2rem 0; line-height: 1; }
-.big-card-hint { font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.3); padding: 0.3rem 1.2rem 0; text-transform: uppercase; letter-spacing: 0.08em; }
-.big-card-body { padding: 0.9rem 1.2rem 1.2rem; }
-/* ── Half-width card grid ── */
-.card-row { display: flex; gap: 0.6rem; }
-.card-row .big-card { flex: 1; min-width: 0; }
-.info-code { font-size: 28px; font-weight: 800; color: #fff; letter-spacing: 0.04em; line-height: 1; font-variant-numeric: tabular-nums; }
-.info-code-label { font-size: 10px; font-weight: 600; color: rgba(255,255,255,0.3); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.2rem; margin-bottom: 0; }
-.info-row { display: flex; align-items: center; gap: 12px; margin-bottom: 7px; }
-.info-label { font-size: 12px; color: rgba(255,255,255,0.3); width: 68px; flex-shrink: 0; }
-.info-value { font-size: 15px; font-weight: 600; color: #fff; }
-.maps-btn { display: inline-flex; align-items: center; gap: 6px; margin-top: 1rem; font-size: 13px; font-weight: 600; color: #6ab3ff; text-decoration: none; }
+.logo-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.6rem; }
+.logo-row img { height: 15px; filter: brightness(0) invert(1); opacity: 0.8; }
+.dow { font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); }
+h1 { font-size: 36px; font-weight: 800; letter-spacing: -1.2px; line-height: 1; margin: 0.35rem 0 1.15rem; }
+.schedule { display: flex; align-items: stretch; gap: 0; border-top: 1px solid rgba(255,255,255,0.14); padding-top: 0.9rem; }
+.sched-item { flex: 1; display: flex; flex-direction: column; gap: 3px; padding-right: 0.7rem; }
+.sched-item + .sched-item { border-left: 1px solid rgba(255,255,255,0.14); padding-left: 0.75rem; }
+.sched-label { font-size: 9px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,242,234,0.7); }
+.sched-value { font-size: 16px; font-weight: 700; letter-spacing: -0.3px; }
+.where { margin-top: 0.85rem; font-size: 13px; color: rgba(245,242,234,0.72); font-weight: 500; }
+.section { padding: 1.15rem 1rem 0; }
+.section-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--text-mute); padding: 0 0.15rem 0.55rem;
+}
+.card { background: var(--card); border-radius: 16px; overflow: hidden; border: 1px solid var(--line); }
+.roster-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+.roster-grid.single { grid-template-columns: 1fr; }
+.roster-title { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); padding: 0.85rem 0.95rem 0.35rem; }
+.row { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; padding: 0.48rem 0.95rem; border-top: 1px solid var(--line); }
+.row:nth-child(2) { border-top: none; }
+.role { font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-mute); }
+.name { font-size: 13.5px; font-weight: 600; color: var(--text); text-align: right; }
+.row.md .role, .row.md .name { color: var(--text); font-weight: 700; }
+.tbd { font-size: 13px; color: var(--text-mute); padding: 0.7rem 0.95rem 1rem; }
+.song { padding: 1rem 1rem 1.05rem; border-top: 1px solid var(--line); }
+.song:first-of-type { border-top: none; }
+.song-top { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 0.45rem; }
+.song-num {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: rgba(255,255,255,0.08); color: var(--text-dim);
+  font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; margin-top: 2px; font-variant-numeric: tabular-nums;
+}
+.song-title { flex: 1; font-size: 18px; font-weight: 700; letter-spacing: -0.4px; line-height: 1.2; }
+.meta-badges { display: flex; flex-shrink: 0; gap: 5px; margin-top: 1px; }
+.badge {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.04em;
+  padding: 4px 8px; border-radius: 7px; background: var(--gold-dim);
+  color: var(--gold); border: 1px solid var(--gold-line); white-space: nowrap;
+}
+.badge.bpm { background: rgba(255,255,255,0.06); color: var(--text-dim); border-color: var(--line-strong); font-variant-numeric: tabular-nums; }
+.form { margin: 0.15rem 0 0.55rem 30px; font-size: 12px; font-weight: 500; color: var(--text-dim); letter-spacing: 0.01em; }
+.form b { color: var(--text); font-weight: 650; }
+.chips { display: flex; flex-wrap: wrap; gap: 5px; margin: 0 0 0.7rem 30px; }
+.chip {
+  font-size: 11.5px; font-weight: 600; color: var(--text);
+  background: var(--card-2); border: 1px solid var(--line-strong);
+  border-radius: 999px; padding: 4px 9px; line-height: 1.2;
+}
+.chip span { color: var(--text-mute); font-weight: 600; padding-right: 4px; text-transform: uppercase; font-size: 9.5px; letter-spacing: 0.06em; }
+.chip.lead { background: var(--gold-dim); border-color: var(--gold-line); }
+.chip.lead span { color: var(--gold); }
+.note {
+  margin: 0 0 0.7rem 30px;
+  font-size: 12.5px; font-weight: 500; color: var(--text);
+  background: rgba(232,197,122,0.08); border-left: 2px solid var(--gold);
+  padding: 0.45rem 0.7rem; border-radius: 0 8px 8px 0; line-height: 1.4;
+}
+.actions { display: flex; flex-wrap: wrap; gap: 6px; padding-left: 30px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 12px; font-weight: 650; text-decoration: none;
+  border-radius: 999px; padding: 6px 12px; border: 1px solid transparent;
+}
+.btn.chart { color: var(--blue); background: var(--blue-bg); border-color: var(--blue-line); }
+.btn.guide { color: var(--violet); background: var(--violet-bg); border-color: var(--violet-line); }
+.btn.ref { color: var(--text-dim); background: rgba(255,255,255,0.05); border-color: var(--line-strong); }
+.btn.off { opacity: 0.38; pointer-events: none; }
+.split { display: flex; gap: 0.6rem; }
+.split .card { flex: 1; min-width: 0; padding: 0.95rem 1rem 1.05rem; }
+.kicker { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-mute); margin-bottom: 0.45rem; }
+.code { font-size: 26px; font-weight: 800; letter-spacing: 0.02em; line-height: 1; font-variant-numeric: tabular-nums; }
+.sub { font-size: 12.5px; color: var(--text-dim); line-height: 1.5; margin-top: 0.55rem; }
+.maps { display: inline-flex; align-items: center; gap: 5px; margin-top: 0.7rem; font-size: 13px; font-weight: 650; color: var(--blue); text-decoration: none; }
+.wifi-row { margin-bottom: 0.55rem; }
+.wifi-row:last-child { margin-bottom: 0; }
+.wifi-val { font-size: 15px; font-weight: 700; margin-top: 2px; word-break: break-word; }
+.app { padding: 0.95rem 1rem 1.1rem; }
+.app p { font-size: 13.5px; color: var(--text-dim); line-height: 1.55; margin-bottom: 0.75rem; }
+.app p strong { color: var(--text); font-weight: 700; }
 .app-links { display: flex; gap: 8px; }
-.app-link-btn { display: inline-flex; align-items: center; font-size: 12px; font-weight: 600; color: #fff; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 6px 16px; text-decoration: none; }
+.app-links a {
+  font-size: 12px; font-weight: 650; color: var(--text); text-decoration: none;
+  background: rgba(255,255,255,0.08); border: 1px solid var(--line-strong);
+  border-radius: 999px; padding: 6px 14px;
+}
+.footer {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  padding: 1.6rem 1rem 0.4rem; text-align: center;
+  font-size: 11px; color: var(--text-mute);
+}
+.footer img { height: 11px; opacity: 0.35; filter: brightness(0) invert(1); }
+@media print {
+  body { background: #fff !important; color: #111 !important; padding: 0 !important; }
+  .page { max-width: none; box-shadow: none; border-radius: 0; background: #fff; }
+  .hero-bg { background: #f3f1ea !important; padding: 1rem 0.5rem 0.8rem; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .hero-bg::after { display: none; }
+  h1, .sched-value, .name, .song-title, .code, .wifi-val, .chip, .note, .btn, p, .sub, .form, .where, .role, .section-label, .kicker, .dow, .footer { color: #111 !important; }
+  .dow, .badge, .chip.lead span, .roster-title { color: #7a5a12 !important; }
+  .card, .song, .chip, .badge, .btn { border-color: #ddd !important; background: #fff !important; }
+  .note { background: #f7f1e1 !important; }
+  .app-links, .btn.ref { display: none; }
+  .hero-bg img, .logo-row img { filter: none !important; opacity: 1 !important; }
+}
 
-/* ── Setlist (inside big card) ── */
-.setlist-inner { display: flex; flex-direction: column; margin-top: 0.75rem; }
-
-/* ── Footer ── */
-.footer-note { font-size: 11px; color: rgba(255,255,255,0.18); text-align: center; padding: 1.5rem 0 0.5rem; display: flex; align-items: center; justify-content: center; gap: 6px; }
-.footer-logo { height: 11px; opacity: 0.2; filter: brightness(0) invert(1); }
-.page-bottom-pad { height: 80px; }
-
-/* ── Contact sheet ── */
-.overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 100; align-items: flex-end; justify-content: center; backdrop-filter: blur(6px); }
-.overlay.active { display: flex; }
-.contact-sheet { background: #1c1c1e; border-radius: 20px 20px 0 0; width: 100%; max-width: 430px; padding: 1.25rem; padding-bottom: max(1.5rem, env(safe-area-inset-bottom)); border-top: 1px solid rgba(255,255,255,0.1); }
-.contact-handle { width: 36px; height: 4px; background: rgba(255,255,255,0.15); border-radius: 2px; margin: 0 auto 1.25rem; }
-.contact-header { display: flex; align-items: center; gap: 14px; margin-bottom: 1.25rem; }
-.contact-avatar { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; flex-shrink: 0; }
-.contact-name { font-size: 18px; font-weight: 700; color: #fff; }
-.contact-role { font-size: 13px; color: rgba(255,255,255,0.4); margin-top: 2px; }
-.contact-btn { display: flex; align-items: center; gap: 14px; padding: 0.85rem 1rem; background: rgba(255,255,255,0.07); border: none; border-radius: 14px; text-decoration: none; margin-bottom: 8px; }
-.contact-btn-icon { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.contact-btn-label { font-size: 11px; color: rgba(255,255,255,0.35); font-weight: 500; }
-.contact-btn-value { font-size: 14px; font-weight: 500; color: #fff; margin-top: 2px; }
-.close-btn { width: 100%; margin-top: 4px; padding: 0.875rem; background: rgba(255,255,255,0.07); border: none; border-radius: 14px; font-size: 15px; font-weight: 600; color: rgba(255,255,255,0.8); cursor: pointer; text-align: center; }
 </style>
 </head>
 <body>
 <div class="page">
-
   <div class="hero">
     <div class="hero-bg">
       <div class="hero-inner">
-        <div class="at-logo">
-          <img src="https://storage1.snappages.site/B68JRB/assets/images/9818485_900x150_500.png" alt="Angelus Temple"/>
+        <div class="logo-row">
+          <img src="https://storage1.snappages.site/B68JRB/assets/images/9818485_900x150_500.png" alt="Angelus Temple">
+          <div class="dow">Sunday service</div>
         </div>
-        <div class="hero-eyebrow">Angelus Temple · Band Sheet</div>
-        <h1>November 8, 2026</h1>
-        <div class="meta-row">
-          <div class="meta-item"><span class="meta-label">Call</span><span class="meta-value">7:30 AM</span></div>
-          <div class="meta-item"><span class="meta-label">Service</span><span class="meta-value">10:00 AM</span></div>
-          <div class="meta-item"><span class="meta-label">Location</span><span class="meta-value">Main Sanctuary</span></div>
+        <h1>November 22</h1>
+        <div class="schedule">
+          <div class="sched-item"><span class="sched-label">Call</span><span class="sched-value">7:30 AM</span></div><div class="sched-item"><span class="sched-label">Service</span><span class="sched-value">10:00 AM</span></div>
+        </div>
+        <div class="where">Main Sanctuary · 1100 Glendale Blvd, Los Angeles, CA 90026</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">This week's team</div>
+    <div class="roster-grid">
+      <div class="card">
+        <div class="roster-title">Band</div>
+        <div class="row md"><span class="role">MD</span><span class="name">Paul Edelman</span></div><div class="row"><span class="role">Drums</span><span class="name">Garrit Tillman</span></div><div class="row"><span class="role">Bass</span><span class="name">Alex Kyhn</span></div><div class="row"><span class="role">Rhythm</span><span class="name">Paul Edelman</span></div><div class="row"><span class="role">Acoustic</span><span class="name">Imani Jones-Williams</span></div><div class="row"><span class="role">Keys</span><span class="name">Maleke Clemmons</span></div>
+      </div>
+      
+      <div class="card">
+        <div class="roster-title">Vocals</div>
+        <div class="row md"><span class="role">Lead</span><span class="name">Imani Jones-Williams</span></div><div class="row"><span class="role">Alto</span><span class="name">Cara Davis</span></div><div class="row"><span class="role">Alto</span><span class="name">Hannah Snapp</span></div><div class="row"><span class="role">Tenor</span><span class="name">Tom Carballo</span></div><div class="row"><span class="role">Melody</span><span class="name">Yadiie Pinuelas</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Setlist</div>
+    <div class="card">
+      
+      <div class="song">
+        <div class="song-top">
+          <div class="song-num">1</div>
+          <div class="song-title">Thank God I&#x27;m Free</div>
+          <div class="meta-badges"><span class="badge">D</span><span class="badge bpm">128</span></div>
+        </div>
+        <div class="form"><b>Form</b> &nbsp;Intro · V1 · V2 · C · PostC · TA · V3 · C · PostC · B×3 · Ref · C · PostC · B×2 · Ref · PostC×2 · Outro</div>
+        
+        
+        <div class="actions">
+          <a class="btn chart" href="https://services.planningcenteronline.com/attachments/228545375" target="_blank" rel="noopener">Nash Chart</a>
+          <a class="btn guide" href="https://services.planningcenteronline.com/attachments/236485355" target="_blank" rel="noopener">Guide</a>
+          <a class="btn ref" href="https://www.youtube.com/results?search_query=Thank%20God%20I%27m%20Free%20worship" target="_blank" rel="noopener">Reference</a>
+        </div>
+      </div>
+      <div class="song">
+        <div class="song-top">
+          <div class="song-num">2</div>
+          <div class="song-title">Another Like You</div>
+          <div class="meta-badges"><span class="badge">G</span><span class="badge bpm">69.5</span></div>
+        </div>
+        <div class="form"><b>Form</b> &nbsp;Intro · V1 · C · TA · V2 · C×2 · Inst · B×3 · C×2 · Tag1 · C · Tag2 · Inst×3 · Ref1×4 · Ref2×2 · B×2 · C×2 · Outro</div>
+        
+        
+        <div class="actions">
+          <a class="btn chart" href="https://services.planningcenteronline.com/attachments/245101821" target="_blank" rel="noopener">Nash Chart</a>
+          <a class="btn guide" href="https://services.planningcenteronline.com/attachments/245101823" target="_blank" rel="noopener">Guide</a>
+          <a class="btn ref" href="https://www.youtube.com/results?search_query=Another%20Like%20You%20worship" target="_blank" rel="noopener">Reference</a>
+        </div>
+      </div>
+      <div class="song">
+        <div class="song-top">
+          <div class="song-num">3</div>
+          <div class="song-title">Goodness Of God</div>
+          <div class="meta-badges"><span class="badge">G</span><span class="badge bpm">63</span></div>
+        </div>
+        <div class="form"><b>Form</b> &nbsp;Intro · V · C · V · C · B×2 · C×2 · Tag · Outro</div>
+        
+        
+        <div class="actions">
+          <a class="btn chart" href="https://services.planningcenteronline.com/attachments/229737687" target="_blank" rel="noopener">Nash Chart</a>
+          <a class="btn guide" href="https://services.planningcenteronline.com/attachments/229736440" target="_blank" rel="noopener">Guide</a>
+          <a class="btn ref" href="https://www.youtube.com/results?search_query=Goodness%20Of%20God%20worship" target="_blank" rel="noopener">Reference</a>
+        </div>
+      </div>
+      <div class="song">
+        <div class="song-top">
+          <div class="song-num">4</div>
+          <div class="song-title">Blood Of Jesus</div>
+          <div class="meta-badges"><span class="badge">E</span><span class="badge bpm">69</span></div>
+        </div>
+        <div class="form"><b>Form</b> &nbsp;Intro×2 · V1 · C×2 · TA · V2 · C×2 · Interlude · B×6 · Vamp · C×2 · Outro</div>
+        
+        
+        <div class="actions">
+          <a class="btn chart" href="https://services.planningcenteronline.com/attachments/230880810" target="_blank" rel="noopener">Nash Chart</a>
+          <a class="btn guide" href="https://services.planningcenteronline.com/attachments/227870867" target="_blank" rel="noopener">Guide</a>
+          <a class="btn ref" href="https://www.youtube.com/results?search_query=Blood%20Of%20Jesus%20worship" target="_blank" rel="noopener">Reference</a>
         </div>
       </div>
     </div>
   </div>
 
   <div class="section">
-    <div class="big-card">
-      <div class="big-card-label">Band</div>
-      <div class="big-card-hint">Tap to contact</div>
-      <div class="band-list"><div class="band-row band-row-director" onclick="openContact('Paul Edelman','Music Director','PE','#1a3a2a','#4ade80','(510) 828-7852','pauledelmanmusic@gmail.com')"><span class="band-row-role">Music Director</span><span class="band-row-name">Paul Edelman</span><svg class="band-row-chevron" viewBox="0 0 8 14" fill="none"><path d="M1 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="band-row" onclick="openContact('Garrit Tillman','Drums','GT','#1a3a2a','#4ade80','(865) 660-2234','Garrit.tillman@gmail.com')"><span class="band-row-role">Drums</span><span class="band-row-name">Garrit Tillman</span><svg class="band-row-chevron" viewBox="0 0 8 14" fill="none"><path d="M1 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="band-row" onclick="openContact('Alex Kyhn','Bass Guitar','AK','#1a3a2a','#4ade80','3036189598','alexkyhn@yahoo.com')"><span class="band-row-role">Bass Guitar</span><span class="band-row-name">Alex Kyhn</span><svg class="band-row-chevron" viewBox="0 0 8 14" fill="none"><path d="M1 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="band-row" onclick="openContact('Paul Edelman','Electric Guitar (Rhythm)','PE','#1a3a2a','#4ade80','(510) 828-7852','pauledelmanmusic@gmail.com')"><span class="band-row-role">Electric Guitar (Rhythm)</span><span class="band-row-name">Paul Edelman</span><svg class="band-row-chevron" viewBox="0 0 8 14" fill="none"><path d="M1 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="band-row" onclick="openContact('Rod Castro','Electric Guitar (Lead)','RC','#1a3a2a','#4ade80','818-939-6067','iamrodcastro@gmail.com')"><span class="band-row-role">Electric Guitar (Lead)</span><span class="band-row-name">Rod Castro</span><svg class="band-row-chevron" viewBox="0 0 8 14" fill="none"><path d="M1 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="band-row" onclick="openContact('Imani Jones-Williams','Acoustic Guitar','IJ','#1a3a2a','#4ade80','(213) 310-1388','ijones@angelustemple.org')"><span class="band-row-role">Acoustic Guitar</span><span class="band-row-name">Imani Jones-Williams</span><svg class="band-row-chevron" viewBox="0 0 8 14" fill="none"><path d="M1 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="band-row" onclick="openContact('Weston Wilson','Keys','WW','#1a3a2a','#4ade80','','wwilson1997@gmail.com')"><span class="band-row-role">Keys</span><span class="band-row-name">Weston Wilson</span><svg class="band-row-chevron" viewBox="0 0 8 14" fill="none"><path d="M1 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="section-label">At the building</div>
+    <div class="split">
+      <div class="card">
+        <div class="kicker">Parking · gate</div>
+        <div class="code">02625#</div>
+        <div class="sub">1145 Lemoyne St<br>Load-in: side entrance on Glendale Blvd</div>
+        <a class="maps" href="https://maps.google.com/?q=1145+Lemoyne+St+Los+Angeles+CA+90026" target="_blank" rel="noopener">Open in Maps</a>
       </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="big-card">
-      <div class="big-card-label">Setlist</div>
-      <div class="setlist-inner">
-      <div class="song-card">
-        <div class="song-top-row">
-          <span class="song-num">1</span>
-          <span class="song-title">Light of Your Love</span>
-          
-          <span class="key-badge">Key: F</span>
+      <div class="card">
+        <div class="kicker">Monitor Wi-Fi</div>
+        <div class="wifi-row">
+          <div class="kicker">Network</div>
+          <div class="wifi-val">monitor mix</div>
         </div>
-        <div class="pco-section-label">Planning Center</div>
-        <div class="song-actions song-pco-actions">
-          <a class="res-btn chart" href="https://services.planningcenteronline.com/attachments/245101732" target="_blank"><svg viewBox="0 0 9 9" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="0.75" y="0.75" width="7.5" height="7.5" rx="1"/><path d="M2.5 4.5h4M4.5 2.5v4"/></svg>Chart</a>
-          <span class="res-btn mp3" style="opacity:0.3;cursor:default;"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Guide Audio</span>
-        </div>
-        <div class="yt-divider"></div>
-        <div class="yt-section-label">YouTube References</div>
-        <div class="song-actions song-yt-actions">
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=Light%20of%20Your%20Love%20worship" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Full</a>
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=Light%20of%20Your%20Love%20drum%20cover" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Drums</a>
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=Light%20of%20Your%20Love%20keys%20piano%20cover" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Keys</a>
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=Light%20of%20Your%20Love%20bass%20cover" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Bass</a>
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=Light%20of%20Your%20Love%20guitar%20cover" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Guitar</a>
-        </div><div class="song-note">VOCAL PARTS:
-Lead - Katelyn
-Alto - Cara
-Tenor - Tom
-Melody - Yadiie</div>
-      </div>
-      <div class="song-card">
-        <div class="song-top-row">
-          <span class="song-num">2</span>
-          <span class="song-title">When Wind Meets Fire</span>
-          
-          <span class="key-badge">Key: G</span>
-        </div>
-        <div class="pco-section-label">Planning Center</div>
-        <div class="song-actions song-pco-actions">
-          <a class="res-btn chart" href="https://services.planningcenteronline.com/attachments/231343887" target="_blank"><svg viewBox="0 0 9 9" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="0.75" y="0.75" width="7.5" height="7.5" rx="1"/><path d="M2.5 4.5h4M4.5 2.5v4"/></svg>Chart</a>
-          <a class="res-btn mp3" href="https://services.planningcenteronline.com/attachments/245172565" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Guide Audio</a>
-        </div>
-        <div class="yt-divider"></div>
-        <div class="yt-section-label">YouTube References</div>
-        <div class="song-actions song-yt-actions">
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=When%20Wind%20Meets%20Fire%20worship" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Full</a>
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=When%20Wind%20Meets%20Fire%20drum%20cover" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Drums</a>
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=When%20Wind%20Meets%20Fire%20keys%20piano%20cover" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Keys</a>
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=When%20Wind%20Meets%20Fire%20bass%20cover" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Bass</a>
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=When%20Wind%20Meets%20Fire%20guitar%20cover" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Guitar</a>
-        </div><div class="song-note">VOCAL PARTS:
-Lead - Imani (Verse 1, All Refrains, PreChorus 3), Tom (Verse 2, Bridge 1-4), Cara ((All PreChoruses, All Choruses, Bridge 5-6)
-Alto - Cara (Verse 2), Katelyn, & Imani (PreChorus 1-2 & All Choruses)
-Tenor - Tom (All PreChoruses, All Choruses, Bridge 5-6)
-Melody - Yadiie</div>
-      </div>
-      <div class="song-card">
-        <div class="song-top-row">
-          <span class="song-num">3</span>
-          <span class="song-title">The Blood</span>
-          
-          <span class="key-badge">Key: G</span>
-        </div>
-        <div class="pco-section-label">Planning Center</div>
-        <div class="song-actions song-pco-actions">
-          <a class="res-btn chart" href="https://services.planningcenteronline.com/attachments/183894763" target="_blank"><svg viewBox="0 0 9 9" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="0.75" y="0.75" width="7.5" height="7.5" rx="1"/><path d="M2.5 4.5h4M4.5 2.5v4"/></svg>Chart</a>
-          <a class="res-btn mp3" href="https://services.planningcenteronline.com/attachments/176872812" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Guide Audio</a>
-        </div>
-        <div class="yt-divider"></div>
-        <div class="yt-section-label">YouTube References</div>
-        <div class="song-actions song-yt-actions">
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=The%20Blood%20worship" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Full</a>
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=The%20Blood%20drum%20cover" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Drums</a>
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=The%20Blood%20keys%20piano%20cover" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Keys</a>
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=The%20Blood%20bass%20cover" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Bass</a>
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=The%20Blood%20guitar%20cover" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Guitar</a>
-        </div><div class="song-note">VOCAL PARTS:
-Lead - Imani (Verse 1, Choruses, Bridge 1, Verse 3) & Katelyn (Verse 2, Bridge 2)
-Alto - Cara, Katelyn (Chorus 2 & 3, Bridge 1)
-Tenor - Tom
-Melody - Yadiie</div>
-      </div>
-      <div class="song-card">
-        <div class="song-top-row">
-          <span class="song-num">4</span>
-          <span class="song-title">The Blood</span>
-          
-          <span class="key-badge">Key: G</span>
-        </div>
-        <div class="pco-section-label">Planning Center</div>
-        <div class="song-actions song-pco-actions">
-          <a class="res-btn chart" href="https://services.planningcenteronline.com/attachments/183894763" target="_blank"><svg viewBox="0 0 9 9" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="0.75" y="0.75" width="7.5" height="7.5" rx="1"/><path d="M2.5 4.5h4M4.5 2.5v4"/></svg>Chart</a>
-          <a class="res-btn mp3" href="https://services.planningcenteronline.com/attachments/176872812" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Guide Audio</a>
-        </div>
-        <div class="yt-divider"></div>
-        <div class="yt-section-label">YouTube References</div>
-        <div class="song-actions song-yt-actions">
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=The%20Blood%20worship" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Full</a>
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=The%20Blood%20drum%20cover" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Drums</a>
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=The%20Blood%20keys%20piano%20cover" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Keys</a>
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=The%20Blood%20bass%20cover" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Bass</a>
-          <a class="res-btn play" href="https://www.youtube.com/results?search_query=The%20Blood%20guitar%20cover" target="_blank"><svg viewBox="0 0 9 9" fill="currentColor"><path d="M1.5 1l6 3.5-6 3.5z"/></svg>Guitar</a>
-        </div>
-      </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="card-row">
-      <div class="big-card">
-        <div class="big-card-label">Parking</div>
-        <div class="big-card-body">
-          <div class="info-code">02625#</div>
-          <div class="info-code-label">Gate code</div>
-          <div style="margin-top:0.75rem;font-size:12px;color:rgba(255,255,255,0.45);line-height:1.6;">1145 Lemoyne St<br>Side entrance on<br>Glendale Blvd</div>
-          <a class="maps-btn" href="https://maps.google.com/?q=1145+Lemoyne+St+Los+Angeles+CA+90026" target="_blank">
-            <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="6" r="2.2" stroke="currentColor" stroke-width="1.3"/><path d="M7 13S2 9 2 6a5 5 0 0110 0c0 3-5 7-5 7z" stroke="currentColor" stroke-width="1.3"/></svg>
-            Maps
-          </a>
-        </div>
-      </div>
-      <div class="big-card">
-        <div class="big-card-label">Wi-Fi</div>
-        <div class="big-card-body">
-          <div style="margin-bottom:0.6rem;">
-            <div style="font-size:10px;font-weight:600;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:3px;">Network</div>
-            <div style="font-size:14px;font-weight:700;color:#fff;">monitor mix</div>
-          </div>
-          <div>
-            <div style="font-size:10px;font-weight:600;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:3px;">Password</div>
-            <div style="font-size:14px;font-weight:700;color:#fff;">12345678</div>
-          </div>
+        <div class="wifi-row">
+          <div class="kicker">Password</div>
+          <div class="wifi-val">12345678</div>
         </div>
       </div>
     </div>
   </div>
 
   <div class="section">
-    <div class="big-card">
-      <div class="big-card-label">Monitor App</div>
-      <div class="big-card-body">
-        <div style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.65;margin-bottom:0.85rem;">Open app → select <strong style="color:#fff;">Yamaha DM7</strong> → pick the mix that matches your pack.</div>
-        <div class="app-links">
-          <a class="app-link-btn" href="https://apps.apple.com/us/app/monitormix-us/id1001345675" target="_blank">App Store</a>
-          <a class="app-link-btn" href="https://play.google.com/store/apps/details?id=jp.co.yamaha.pa.monitormix" target="_blank">Google Play</a>
-        </div>
+    <div class="section-label">Monitors</div>
+    <div class="card app">
+      <p>Open MonitorMix → select <strong>Yamaha DM7</strong> → pick the mix that matches your pack.</p>
+      <div class="app-links">
+        <a href="https://apps.apple.com/us/app/monitormix-us/id647531065" target="_blank" rel="noopener">App Store</a>
+        <a href="https://play.google.com/store/apps/details?id=jp.co.yamaha.pa.monitormix" target="_blank" rel="noopener">Google Play</a>
       </div>
     </div>
   </div>
 
-  <div class="section">
-    <div class="footer-note">
-      <img src="https://storage1.snappages.site/B68JRB/assets/images/9818485_900x150_500.png" class="footer-logo" alt="Angelus Temple"/>
-      Generated from Planning Center &nbsp;·&nbsp; angelustemple.org
-    </div>
-  </div>
-
-  <div class="page-bottom-pad"></div>
-</div>
-
-<div class="overlay" id="overlay" onclick="if(event.target===this)closeContact()">
-  <div class="contact-sheet">
-    <div class="contact-handle"></div>
-    <div class="contact-header">
-      <div class="contact-avatar" id="cAvatar"></div>
-      <div><div class="contact-name" id="cName"></div><div class="contact-role" id="cRole"></div></div>
-    </div>
-    <a class="contact-btn" id="cPhone" href="#">
-      <div class="contact-btn-icon" style="background:#1a3a2a;">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 2h3l1.5 3.5-1.5 1a7 7 0 003.5 3.5l1-1.5L14 10v3a1 1 0 01-1 1A11 11 0 012 3a1 1 0 011-1z" stroke="#4ade80" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <div><div class="contact-btn-label">Call or text</div><div class="contact-btn-value" id="cPhoneVal"></div></div>
-    </a>
-    <a class="contact-btn" id="cEmail" href="#">
-      <div class="contact-btn-icon" style="background:#1a2a3a;">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="10" rx="2" stroke="#60a5fa" stroke-width="1.3"/><path d="M1 5l7 5 7-5" stroke="#60a5fa" stroke-width="1.3" stroke-linecap="round"/></svg>
-      </div>
-      <div><div class="contact-btn-label">Email</div><div class="contact-btn-value" id="cEmailVal"></div></div>
-    </a>
-    <div class="close-btn" onclick="closeContact()">Done</div>
+  <div class="footer">
+    <img src="https://storage1.snappages.site/B68JRB/assets/images/9818485_900x150_500.png" alt="">
+    <div>Generated from Planning Center · angelustemple.org</div>
   </div>
 </div>
-
-<script>
-// ── Contact sheet ──
-function openContact(name,role,initials,bg,color,phone,email){
-  var av=document.getElementById('cAvatar');
-  av.textContent=initials; av.style.background=bg; av.style.color=color;
-  document.getElementById('cName').textContent=name;
-  document.getElementById('cRole').textContent=role;
-  document.getElementById('cPhoneVal').textContent=phone||'Not listed';
-  document.getElementById('cPhone').href=phone?'tel:'+phone.replace(/\D/g,''):'#';
-  document.getElementById('cEmailVal').textContent=email||'Not listed';
-  document.getElementById('cEmail').href=email?'mailto:'+email:'#';
-  document.getElementById('overlay').classList.add('active');
-}
-function closeContact(){document.getElementById('overlay').classList.remove('active');}
-
-</script>
 </body>
 </html>
