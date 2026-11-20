@@ -8,7 +8,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Angelus Temple">
 <meta property="og:title" content="Angelus Temple Band - Sunday, Nov 22">
-<meta property="og:description" content="Call 7:30 AM · Thank God I'm Free (D), Another Like You (G), Goodness Of God (G), Blood Of Jesus (E)">
+<meta property="og:description" content="Call 7:30 AM · Thank God I'm Free (D), Another Like You (G), Blood Of Jesus (F), Goodness Of God (Chorus &amp; Bridge) (G)">
 <meta property="og:image" content="https://danielbyrnemusic.github.io/at-band-sheet/og.png">
 <meta property="og:image:secure_url" content="https://danielbyrnemusic.github.io/at-band-sheet/og.png">
 <meta property="og:image:width" content="1200">
@@ -17,7 +17,7 @@
 <meta property="og:url" content="https://danielbyrnemusic.github.io/at-band-sheet">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Angelus Temple Band - Sunday, Nov 22">
-<meta name="twitter:description" content="Call 7:30 AM · Thank God I'm Free (D), Another Like You (G), Goodness Of God (G), Blood Of Jesus (E)">
+<meta name="twitter:description" content="Call 7:30 AM · Thank God I'm Free (D), Another Like You (G), Blood Of Jesus (F), Goodness Of God (Chorus &amp; Bridge) (G)">
 <meta name="twitter:image" content="https://danielbyrnemusic.github.io/at-band-sheet/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -113,8 +113,6 @@ h1 { font-size: 36px; font-weight: 800; letter-spacing: -1.2px; line-height: 1; 
   color: var(--gold); border: 1px solid var(--gold-line); white-space: nowrap;
 }
 .badge.bpm { background: rgba(255,255,255,0.06); color: var(--text-dim); border-color: var(--line-strong); font-variant-numeric: tabular-nums; }
-.form { margin: 0.15rem 0 0.55rem 30px; font-size: 12px; font-weight: 500; color: var(--text-dim); letter-spacing: 0.01em; }
-.form b { color: var(--text); font-weight: 650; }
 .chips { display: flex; flex-wrap: wrap; gap: 5px; margin: 0 0 0.7rem 30px; }
 .chip {
   font-size: 11.5px; font-weight: 600; color: var(--text);
@@ -140,6 +138,35 @@ h1 { font-size: 36px; font-weight: 800; letter-spacing: -1.2px; line-height: 1; 
 .btn.guide { color: var(--violet); background: var(--violet-bg); border-color: var(--violet-line); }
 .btn.ref { color: var(--text-dim); background: rgba(255,255,255,0.05); border-color: var(--line-strong); }
 .btn.off { opacity: 0.38; pointer-events: none; }
+.refs { margin: 0.35rem 0 0 30px; border-top: 1px solid var(--line); }
+.refs summary {
+  display: flex; align-items: center; justify-content: space-between;
+  width: 100%; list-style: none; cursor: pointer;
+  font-size: 11px; font-weight: 650; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--text-mute);
+  padding: 8px 0 2px; user-select: none; -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.refs summary::-webkit-details-marker { display: none; }
+.refs summary::marker { content: ""; display: none; }
+.refs .chev {
+  display: inline-block; width: 6px; height: 6px; flex-shrink: 0;
+  border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg); margin-top: -3px; opacity: 0.75;
+}
+.refs[open] .chev { transform: rotate(225deg); margin-top: 2px; }
+.yt-grid {
+  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 5px; margin: 6px 0 2px;
+}
+.yt-chip {
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 650; text-decoration: none; text-align: center;
+  border-radius: 999px; padding: 6px 8px; line-height: 1.2;
+  color: var(--text-dim);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--line-strong);
+}
 .split { display: flex; gap: 0.6rem; }
 .split .card { flex: 1; min-width: 0; padding: 0.95rem 1rem 1.05rem; }
 .kicker { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-mute); margin-bottom: 0.45rem; }
@@ -169,11 +196,11 @@ h1 { font-size: 36px; font-weight: 800; letter-spacing: -1.2px; line-height: 1; 
   .page { max-width: none; box-shadow: none; border-radius: 0; background: #fff; }
   .hero-bg { background: #f3f1ea !important; padding: 1rem 0.5rem 0.8rem; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .hero-bg::after { display: none; }
-  h1, .sched-value, .name, .song-title, .code, .wifi-val, .chip, .note, .btn, p, .sub, .form, .where, .role, .section-label, .kicker, .dow, .footer { color: #111 !important; }
+  h1, .sched-value, .name, .song-title, .code, .wifi-val, .chip, .note, .btn, p, .sub, .where, .role, .section-label, .kicker, .dow, .footer { color: #111 !important; }
   .dow, .badge, .chip.lead span, .roster-title { color: #7a5a12 !important; }
   .card, .song, .chip, .badge, .btn { border-color: #ddd !important; background: #fff !important; }
   .note { background: #f7f1e1 !important; }
-  .app-links, .btn.ref { display: none; }
+  .app-links, .btn.ref, .refs { display: none; }
   .hero-bg img, .logo-row img { filter: none !important; opacity: 1 !important; }
 }
 
@@ -202,7 +229,7 @@ h1 { font-size: 36px; font-weight: 800; letter-spacing: -1.2px; line-height: 1; 
     <div class="roster-grid">
       <div class="card">
         <div class="roster-title">Band</div>
-        <div class="row md"><span class="role">MD</span><span class="name">Paul Edelman</span></div><div class="row"><span class="role">Drums</span><span class="name">Garrit Tillman</span></div><div class="row"><span class="role">Bass</span><span class="name">Alex Kyhn</span></div><div class="row"><span class="role">Rhythm</span><span class="name">Paul Edelman</span></div><div class="row"><span class="role">Acoustic</span><span class="name">Imani Jones-Williams</span></div><div class="row"><span class="role">Keys</span><span class="name">Maleke Clemmons</span></div>
+        <div class="row md"><span class="role">MD</span><span class="name">Paul Edelman</span></div><div class="row"><span class="role">Drums</span><span class="name">Garrit Tillman</span></div><div class="row"><span class="role">Bass</span><span class="name">Alex Kyhn</span></div><div class="row"><span class="role">Rhythm</span><span class="name">Paul Edelman</span></div><div class="row"><span class="role">Acoustic</span><span class="name">Imani Jones-Williams</span></div><div class="row"><span class="role">Keys</span><span class="name">Maleke Clemmons</span></div><div class="row"><span class="role">Tracks</span><span class="name">Daniel Byrne</span></div>
       </div>
       
       <div class="card">
@@ -222,14 +249,13 @@ h1 { font-size: 36px; font-weight: 800; letter-spacing: -1.2px; line-height: 1; 
           <div class="song-title">Thank God I&#x27;m Free</div>
           <div class="meta-badges"><span class="badge">D</span><span class="badge bpm">128</span></div>
         </div>
-        <div class="form"><b>Form</b> &nbsp;Intro · V1 · V2 · C · PostC · TA · V3 · C · PostC · B×3 · Ref · C · PostC · B×2 · Ref · PostC×2 · Outro</div>
-        
+        <div class="chips"><div class="chip lead"><span>Lead</span>Hannah</div><div class="chip"><span>Alto</span>Cara</div><div class="chip"><span>Tenor</span>Imani &amp; Tom</div><div class="chip"><span>Melody</span>Yadiie</div></div>
         
         <div class="actions">
           <a class="btn chart" href="https://services.planningcenteronline.com/attachments/228545375" target="_blank" rel="noopener">Nash Chart</a>
           <a class="btn guide" href="https://services.planningcenteronline.com/attachments/236485355" target="_blank" rel="noopener">Guide</a>
-          <a class="btn ref" href="https://www.youtube.com/results?search_query=Thank%20God%20I%27m%20Free%20worship" target="_blank" rel="noopener">Reference</a>
         </div>
+        <details class="refs"><summary>References <span class="chev" aria-hidden="true"></span></summary><div class="yt-grid"><a class="yt-chip" href="https://www.youtube.com/results?search_query=Thank%20God%20I%27m%20Free%20ELEVATION%20RHYTHM%20worship" target="_blank" rel="noopener">Full</a><a class="yt-chip" href="https://www.youtube.com/results?search_query=Thank%20God%20I%27m%20Free%20ELEVATION%20RHYTHM%20drum%20cover" target="_blank" rel="noopener">Drums</a><a class="yt-chip" href="https://www.youtube.com/results?search_query=Thank%20God%20I%27m%20Free%20ELEVATION%20RHYTHM%20keys%20piano%20cover" target="_blank" rel="noopener">Keys</a><a class="yt-chip" href="https://www.youtube.com/results?search_query=Thank%20God%20I%27m%20Free%20ELEVATION%20RHYTHM%20bass%20cover" target="_blank" rel="noopener">Bass</a><a class="yt-chip" href="https://www.youtube.com/results?search_query=Thank%20God%20I%27m%20Free%20ELEVATION%20RHYTHM%20guitar%20cover" target="_blank" rel="noopener">Guitar</a></div></details>
       </div>
       <div class="song">
         <div class="song-top">
@@ -237,44 +263,41 @@ h1 { font-size: 36px; font-weight: 800; letter-spacing: -1.2px; line-height: 1; 
           <div class="song-title">Another Like You</div>
           <div class="meta-badges"><span class="badge">G</span><span class="badge bpm">69.5</span></div>
         </div>
-        <div class="form"><b>Form</b> &nbsp;Intro · V1 · C · TA · V2 · C×2 · Inst · B×3 · C×2 · Tag1 · C · Tag2 · Inst×3 · Ref1×4 · Ref2×2 · B×2 · C×2 · Outro</div>
-        
+        <div class="chips"><div class="chip lead"><span>Lead</span>Imani</div><div class="chip"><span>Alto</span>Cara</div><div class="chip"><span>Tenor</span>Hannah</div><div class="chip"><span>Melody</span>Yadiie &amp; Tom</div></div>
         
         <div class="actions">
           <a class="btn chart" href="https://services.planningcenteronline.com/attachments/245101821" target="_blank" rel="noopener">Nash Chart</a>
           <a class="btn guide" href="https://services.planningcenteronline.com/attachments/245101823" target="_blank" rel="noopener">Guide</a>
-          <a class="btn ref" href="https://www.youtube.com/results?search_query=Another%20Like%20You%20worship" target="_blank" rel="noopener">Reference</a>
         </div>
+        <details class="refs"><summary>References <span class="chev" aria-hidden="true"></span></summary><div class="yt-grid"><a class="yt-chip" href="https://www.youtube.com/results?search_query=Another%20Like%20You%20Abbie%20Gamboa%2C%20Brian%20Johnson%2C%20David%20Funk%2C%20Gabriel%20Gamboa%2C%20and%20Jason%20Ingram%20worship" target="_blank" rel="noopener">Full</a><a class="yt-chip" href="https://www.youtube.com/results?search_query=Another%20Like%20You%20Abbie%20Gamboa%2C%20Brian%20Johnson%2C%20David%20Funk%2C%20Gabriel%20Gamboa%2C%20and%20Jason%20Ingram%20drum%20cover" target="_blank" rel="noopener">Drums</a><a class="yt-chip" href="https://www.youtube.com/results?search_query=Another%20Like%20You%20Abbie%20Gamboa%2C%20Brian%20Johnson%2C%20David%20Funk%2C%20Gabriel%20Gamboa%2C%20and%20Jason%20Ingram%20keys%20piano%20cover" target="_blank" rel="noopener">Keys</a><a class="yt-chip" href="https://www.youtube.com/results?search_query=Another%20Like%20You%20Abbie%20Gamboa%2C%20Brian%20Johnson%2C%20David%20Funk%2C%20Gabriel%20Gamboa%2C%20and%20Jason%20Ingram%20bass%20cover" target="_blank" rel="noopener">Bass</a><a class="yt-chip" href="https://www.youtube.com/results?search_query=Another%20Like%20You%20Abbie%20Gamboa%2C%20Brian%20Johnson%2C%20David%20Funk%2C%20Gabriel%20Gamboa%2C%20and%20Jason%20Ingram%20guitar%20cover" target="_blank" rel="noopener">Guitar</a></div></details>
       </div>
       <div class="song">
         <div class="song-top">
           <div class="song-num">3</div>
-          <div class="song-title">Goodness Of God</div>
+          <div class="song-title">Blood Of Jesus</div>
+          <div class="meta-badges"><span class="badge">F</span><span class="badge bpm">69</span></div>
+        </div>
+        <div class="chips"><div class="chip lead"><span>Lead</span>Imani &amp; Cara</div><div class="chip"><span>Alto</span>Hannah</div><div class="chip"><span>Tenor</span>Tom</div><div class="chip"><span>Melody</span>Yadiie</div></div>
+        
+        <div class="actions">
+          <a class="btn chart" href="https://services.planningcenteronline.com/attachments/230880810" target="_blank" rel="noopener">Nash Chart</a>
+          <a class="btn guide" href="https://services.planningcenteronline.com/attachments/239672571" target="_blank" rel="noopener">Guide</a>
+        </div>
+        <details class="refs"><summary>References <span class="chev" aria-hidden="true"></span></summary><div class="yt-grid"><a class="yt-chip" href="https://www.youtube.com/results?search_query=Blood%20Of%20Jesus%20Abbie%20Gamboa%2C%20Gabriel%20Gamboa%2C%20Julian%20Gamboa%2C%20Oscar%20Gamboa%2C%20and%20Raffi%20Greco%20worship" target="_blank" rel="noopener">Full</a><a class="yt-chip" href="https://www.youtube.com/results?search_query=Blood%20Of%20Jesus%20Abbie%20Gamboa%2C%20Gabriel%20Gamboa%2C%20Julian%20Gamboa%2C%20Oscar%20Gamboa%2C%20and%20Raffi%20Greco%20drum%20cover" target="_blank" rel="noopener">Drums</a><a class="yt-chip" href="https://www.youtube.com/results?search_query=Blood%20Of%20Jesus%20Abbie%20Gamboa%2C%20Gabriel%20Gamboa%2C%20Julian%20Gamboa%2C%20Oscar%20Gamboa%2C%20and%20Raffi%20Greco%20keys%20piano%20cover" target="_blank" rel="noopener">Keys</a><a class="yt-chip" href="https://www.youtube.com/results?search_query=Blood%20Of%20Jesus%20Abbie%20Gamboa%2C%20Gabriel%20Gamboa%2C%20Julian%20Gamboa%2C%20Oscar%20Gamboa%2C%20and%20Raffi%20Greco%20bass%20cover" target="_blank" rel="noopener">Bass</a><a class="yt-chip" href="https://www.youtube.com/results?search_query=Blood%20Of%20Jesus%20Abbie%20Gamboa%2C%20Gabriel%20Gamboa%2C%20Julian%20Gamboa%2C%20Oscar%20Gamboa%2C%20and%20Raffi%20Greco%20guitar%20cover" target="_blank" rel="noopener">Guitar</a></div></details>
+      </div>
+      <div class="song">
+        <div class="song-top">
+          <div class="song-num">4</div>
+          <div class="song-title">Goodness Of God (Chorus &amp; Bridge)</div>
           <div class="meta-badges"><span class="badge">G</span><span class="badge bpm">63</span></div>
         </div>
-        <div class="form"><b>Form</b> &nbsp;Intro · V · C · V · C · B×2 · C×2 · Tag · Outro</div>
         
         
         <div class="actions">
           <a class="btn chart" href="https://services.planningcenteronline.com/attachments/229737687" target="_blank" rel="noopener">Nash Chart</a>
           <a class="btn guide" href="https://services.planningcenteronline.com/attachments/229736440" target="_blank" rel="noopener">Guide</a>
-          <a class="btn ref" href="https://www.youtube.com/results?search_query=Goodness%20Of%20God%20worship" target="_blank" rel="noopener">Reference</a>
         </div>
-      </div>
-      <div class="song">
-        <div class="song-top">
-          <div class="song-num">4</div>
-          <div class="song-title">Blood Of Jesus</div>
-          <div class="meta-badges"><span class="badge">E</span><span class="badge bpm">69</span></div>
-        </div>
-        <div class="form"><b>Form</b> &nbsp;Intro×2 · V1 · C×2 · TA · V2 · C×2 · Interlude · B×6 · Vamp · C×2 · Outro</div>
-        
-        
-        <div class="actions">
-          <a class="btn chart" href="https://services.planningcenteronline.com/attachments/230880810" target="_blank" rel="noopener">Nash Chart</a>
-          <a class="btn guide" href="https://services.planningcenteronline.com/attachments/227870867" target="_blank" rel="noopener">Guide</a>
-          <a class="btn ref" href="https://www.youtube.com/results?search_query=Blood%20Of%20Jesus%20worship" target="_blank" rel="noopener">Reference</a>
-        </div>
+        <details class="refs"><summary>References <span class="chev" aria-hidden="true"></span></summary><div class="yt-grid"><a class="yt-chip" href="https://www.youtube.com/results?search_query=Goodness%20Of%20God%20%28Chorus%20%26%20Bridge%29%20Ed%20Cash%20and%20Jenn%20Johnson%20worship" target="_blank" rel="noopener">Full</a><a class="yt-chip" href="https://www.youtube.com/results?search_query=Goodness%20Of%20God%20%28Chorus%20%26%20Bridge%29%20Ed%20Cash%20and%20Jenn%20Johnson%20drum%20cover" target="_blank" rel="noopener">Drums</a><a class="yt-chip" href="https://www.youtube.com/results?search_query=Goodness%20Of%20God%20%28Chorus%20%26%20Bridge%29%20Ed%20Cash%20and%20Jenn%20Johnson%20keys%20piano%20cover" target="_blank" rel="noopener">Keys</a><a class="yt-chip" href="https://www.youtube.com/results?search_query=Goodness%20Of%20God%20%28Chorus%20%26%20Bridge%29%20Ed%20Cash%20and%20Jenn%20Johnson%20bass%20cover" target="_blank" rel="noopener">Bass</a><a class="yt-chip" href="https://www.youtube.com/results?search_query=Goodness%20Of%20God%20%28Chorus%20%26%20Bridge%29%20Ed%20Cash%20and%20Jenn%20Johnson%20guitar%20cover" target="_blank" rel="noopener">Guitar</a></div></details>
       </div>
     </div>
   </div>
